@@ -1,0 +1,17 @@
+# baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "DBJ.Systems Knowledge Base"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "learn"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+author="DBJ"
+description="DBJ.Systems Knowledge Base"
+# https://learn.netlify.com/en/basics/style-customization/
+# Change default color scheme with a variant one. Can be "red", "blue", "green".
+themeVariant = "dbjsystems"
