@@ -1,7 +1,8 @@
 ---
 title: "Learning HUGO Things"
 date: 2019-05-15T16:12:40+02:00
-draft: true
+draft: false
+description: KB for learning the HUGO and LEARN Theme
 ---
 
 ## [Learn the Hugo Learn](https://learn.netlify.com/en/basics/installation/)

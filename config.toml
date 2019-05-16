@@ -4,6 +4,7 @@ title = "DBJ.Systems Knowledge Base"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "learn"
+ 
 
 # For search functionality
 [outputs]
@@ -15,3 +16,6 @@ description="DBJ.Systems Knowledge Base"
 # https://learn.netlify.com/en/basics/style-customization/
 # Change default color scheme with a variant one. Can be "red", "blue", "green".
 themeVariant = "dbjsystems"
+disableBreadcrumb = true
+showVisitedLinks = true
+disableNextPrev = false

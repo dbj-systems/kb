@@ -1,12 +1,10 @@
 ---
 title: "Knopets"
 date: 2019-05-15T16:12:52+02:00
-draft: true
+draft: false
+tags: ["knowledge", "snippets"]
+description: Knowledge + Snipets = Knopets
 ---
-
-**Knowledge + Snipets = Knopets**
-
-<strong>
 - ME DATA can/should be advertised as anti-trulioo platform
   - [trulioo.com](https://www.trulioo.com/)
 
@@ -16,5 +14,6 @@ draft: true
   - Windows 10 will have "no passwords" option "very soon"
      - [Windows 10 says Hello to no passwords with FIDO2 certification](https://www.zdnet.com/article/windows-10-says-hello-to-no-passwords-with-fido2-certification/)
 	     - *Microsoft has passed another milestone on its quest to kill off passwords. The company has now gained official FIDO2 certification for Windows Hello, the Windows 10 biometric authentication system.* 
-- WebAuthn spec is one static web site here: https://github.com/w3c/webauthn/tree/gh-pages		 
- </strong>
+- WebAuthn spec is one static web site here: https://github.com/w3c/webauthn/tree/gh-pages
+- [Morals of Google Search Results](https://www.ted.com/talks/andreas_ekstrom_the_moral_bias_behind_your_search_results/discussion#t-545554)
+- WORD [MARKDOWN Extension](http://www.writage.com) 
