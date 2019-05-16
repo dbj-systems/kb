@@ -1,21 +1,70 @@
 [
 {
-	"uri": "/categories/",
-	"title": "Categories",
+	"uri": "/",
+	"title": "DBJ.System Knowledge Base",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/",
-	"title": "DBJ.Systems Knowledge Base",
+	"uri": "/basics/knopets/",
+	"title": "Knopets",
+	"tags": [],
+	"description": "",
+	"content": "Knowledge + Snipets = Knopets\n - ME DATA can/should be advertised as anti-trulioo platform - trulioo.com\n How imminent is this?  FIDO2 Project https://en.wikipedia.org/wiki/FIDO2_Project Web Authentication https://www.w3.org/TR/webauthn/ Windows 10 will have \u0026ldquo;no passwords\u0026rdquo; option \u0026ldquo;very soon\u0026rdquo;  Windows 10 says Hello to no passwords with FIDO2 certification  Microsoft has passed another milestone on its quest to kill off passwords. The company has now gained official FIDO2 certification for Windows Hello, the Windows 10 biometric authentication system.    WebAuthn spec is one static web site here: https://github.com/w3c/webauthn/tree/gh-pages Morals of Google Search Results\n  "
+},
+{
+	"uri": "/basics/learning/",
+	"title": "Learning HUGO Things",
+	"tags": [],
+	"description": "",
+	"content": " Learn the Hugo Learn Hugo blog from scratch YUML "
+},
+{
+	"uri": "/advice/",
+	"title": "Advice",
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "/basics/",
+	"title": "Basics",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/advice/rudyard_kipling/",
+	"title": "&#39;If&#39;",
+	"tags": ["advice", "life"],
+	"description": "",
+	"content": " \u0026lsquo;IF\u0026rsquo; \u0026ndash; by Rudyard Kipling If you can keep your head when all about you\nAre losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\nBut make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\nOr being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\nAnd yet don’t look too good, nor talk too wise:\nIf you can dream—and not make dreams your master;\nIf you can think—and not make thoughts your aim;\nIf you can meet with Triumph and Disaster\nAnd treat those two impostors just the same;\nIf you can bear to hear the truth you’ve spoken\nTwisted by knaves to make a trap for fools,\nOr watch the things you gave your life to, broken,\nAnd stoop and build ’em up with worn-out tools:\nIf you can make one heap of all your winnings\nAnd risk it on one turn of pitch-and-toss,\nAnd lose, and start again at your beginnings\nAnd never breathe a word about your loss;\nIf you can force your heart and nerve and sinew\nTo serve your turn long after they are gone,\nAnd so hold on when there is nothing in you\nExcept the Will which says to them: ‘Hold on!’\nIf you can talk with crowds and keep your virtue,\nOr walk with Kings—nor lose the common touch,\nIf neither foes nor loving friends can hurt you,\nIf all men count with you, but none too much;\nIf you can fill the unforgiving minute\nWith sixty seconds’ worth of distance run,\nYours is the Earth and everything that’s in it,\nAnd—which is more—you’ll be a Man, my son!\n"
 },
 {
 	"uri": "/tags/",
 	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/advice/",
+	"title": "advice",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/life/",
+	"title": "life",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""

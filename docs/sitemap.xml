@@ -3,17 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
+    <loc>/</loc>
+    <lastmod>2019-05-15T16:12:52+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <priority>0</priority>
+    <loc>/basics/knopets/</loc>
+    <lastmod>2019-05-15T16:12:52+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/basics/learning/</loc>
+    <lastmod>2019-05-15T16:12:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/advice/</loc>
+    <lastmod>2019-05-15T16:12:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/basics/</loc>
+    <lastmod>2019-05-15T16:12:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/advice/rudyard_kipling/</loc>
+    <lastmod>2019-01-12T22:14:57-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2019-01-12T22:14:57-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/advice/</loc>
+    <lastmod>2019-01-12T22:14:57-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/life/</loc>
+    <lastmod>2019-01-12T22:14:57-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
