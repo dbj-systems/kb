@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Advice on DBJ.Systems Knowledge Base</title>
-    <link>/advice/</link>
-    <description>Recent content in Advice on DBJ.Systems Knowledge Base</description>
+    <title>X Files on DBJ.Systems Knowledge Base</title>
+    <link>/x-files/</link>
+    <description>Recent content in X Files on DBJ.Systems Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2019 16:12:03 +0200</lastBuildDate>
     
-	<atom:link href="/advice/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/x-files/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>&#39;If&#39;</title>
-      <link>/advice/rudyard_kipling/</link>
+      <link>/x-files/rudyard_kipling/</link>
       <pubDate>Sat, 12 Jan 2019 22:14:57 -0600</pubDate>
       
-      <guid>/advice/rudyard_kipling/</guid>
-      <description>&amp;lsquo;IF&amp;rsquo; &amp;ndash; by Rudyard Kipling If you can keep your head when all about you
+      <guid>/x-files/rudyard_kipling/</guid>
+      <description>If you can keep your head when all about you
 Are losing theirs and blaming it on you,
 If you can trust yourself when all men doubt you,
 But make allowance for their doubting too;

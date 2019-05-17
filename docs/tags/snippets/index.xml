@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Basics on DBJ.Systems Knowledge Base</title>
-    <link>/basics/</link>
-    <description>Recent content in Basics on DBJ.Systems Knowledge Base</description>
+    <title>snippets on DBJ.Systems Knowledge Base</title>
+    <link>/tags/snippets/</link>
+    <description>Recent content in snippets on DBJ.Systems Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2019 16:12:03 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 16:12:52 +0200</lastBuildDate>
     
-	<atom:link href="/basics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/snippets/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -29,21 +29,6 @@
       <description>ME DATA can/should be advertised as anti-trulioo platform
  trulioo.com  How imminent is this?
  FIDO2 Project https://en.wikipedia.org/wiki/FIDO2_Project Web Authentication https://www.w3.org/TR/webauthn/ Windows 10 will have &amp;ldquo;no passwords&amp;rdquo; option &amp;ldquo;very soon&amp;rdquo;  Windows 10 says Hello to no passwords with FIDO2 certification  Microsoft has passed another milestone on its quest to kill off passwords. The company has now gained official FIDO2 certification for Windows Hello, the Windows 10 biometric authentication system.</description>
-    </item>
-    
-    <item>
-      <title>Learning Things</title>
-      <link>/basics/learning/</link>
-      <pubDate>Wed, 15 May 2019 16:12:40 +0200</pubDate>
-      
-      <guid>/basics/learning/</guid>
-      <description> Mermaid diagrams were created by Knut Sveidqvist for easier documentation.
- On Line tool Paste HTML to MarkDown
- Generate a site using Hugo, a Fast and Flexible Website Generator, running in Visual Studio Team Services or Team Foundation Server.
- Learn the Hugo Learn
- Hugo blog from scratch
- YUML
-  </description>
     </item>
     
   </channel>

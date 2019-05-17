@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.55.5" />
-    <meta name="description" content="KB for learning the HUGO, LEARN Theme and all the rest">
+    <meta name="description" content="Generation of diagram and flowchart from text in a similar manner as markdown">
 <meta name="author" content="DBJ">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Learning Things :: DBJ.Systems Knowledge Base</title>
+    <title>Mermaid :: DBJ.Systems Knowledge Base</title>
 
     
     <link href="/css/nucleus.css?1558087705" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/learning/">
+  <body class="" data-url="/basics/shortcodes/mermaid/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -144,7 +144,7 @@
  
   
     
-      <li data-nav-id="/basics/learning/" title="Learning Things" class="dd-item active">
+      <li data-nav-id="/basics/learning/" title="Learning Things" class="dd-item ">
         <a href="/basics/learning/">
         Learning Things
         <i class="fas fa-check read-icon"></i>
@@ -164,7 +164,7 @@
   
     
     <li data-nav-id="/basics/shortcodes/" title="&#39;LEARN&#39; Theme Short Codes" class="dd-item 
-        
+        parent
         
         
         ">
@@ -247,7 +247,7 @@
  
   
     
-      <li data-nav-id="/basics/shortcodes/mermaid/" title="Mermaid" class="dd-item ">
+      <li data-nav-id="/basics/shortcodes/mermaid/" title="Mermaid" class="dd-item active">
         <a href="/basics/shortcodes/mermaid/">
         Mermaid
         <i class="fas fa-check read-icon"></i>
@@ -419,14 +419,27 @@
                   <span class="links">
                  
                  
-                   Learning Things 
+                   Mermaid 
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#flowchart-example">Flowchart example</a></li>
+<li><a href="#sequence-example">Sequence example</a></li>
+<li><a href="#gantt-example">GANTT Example</a>
+<ul>
+<li><a href="#class-example">Class example</a></li>
+<li><a href="#git-example">Git example</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -442,7 +455,7 @@
           
             <h1>
               
-              Learning Things
+              Mermaid
             </h1>
           
 
@@ -450,19 +463,286 @@
 
 
 
-<ul>
-<li><p><a href="https://mermaidjs.github.io">Mermaid diagrams</a> were created by <a href="https://github.com/knsv">Knut Sveidqvist</a> for easier documentation.</p></li>
 
-<li><p>On Line tool <a href="https://euangoddard.github.io/clipboard2markdown/">Paste HTML to MarkDown</a></p></li>
 
-<li><p><a href="https://github.com/giuliov/hugo-vsts-extension">Generate a site using Hugo, a Fast and Flexible Website Generator, running in Visual Studio Team Services or Team Foundation Server.</a></p></li>
+<p><a href="https://mermaidjs.github.io/">Mermaid</a> is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.</p>
 
-<li><p><a href="https://learn.netlify.com/en/basics/installation/">Learn the Hugo Learn</a></p></li>
+<p>Just insert your mermaid code in the <code>mermaid</code> shortcode and that&rsquo;s it.</p>
 
-<li><p><a href="https://zwbetz.com/make-a-hugo-blog-from-scratch/">Hugo blog from scratch</a></p></li>
+<h2 id="flowchart-example">Flowchart example</h2>
 
-<li><p><a href="https://yuml.me/dbjsystems/diagrams">YUML</a></p></li>
-</ul>
+<pre><code>{{&lt;mermaid align=&quot;left&quot;&gt;}}
+graph LR;
+    A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+{{&lt; /mermaid &gt;}}
+</code></pre>
+
+<p>renders as</p>
+
+<div class="mermaid" align="left">
+graph LR;
+	A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+</div>
+
+
+<p>or you can use this alternative syntax:</p>
+
+<pre>
+```mermaid
+graph LR;
+  A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
+</pre>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">graph LR;
+  A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+</code></pre>
+
+<h2 id="sequence-example">Sequence example</h2>
+
+<pre><code>{{&lt;mermaid&gt;}}
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+{{&lt; /mermaid &gt;}}
+</code></pre>
+
+<p>renders as</p>
+
+<div class="mermaid" align="center">
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->Alice: Great!
+    John->Bob: How about you?
+    Bob-->John: Jolly good!
+</div>
+
+
+<p>or you can use this alternative syntax:</p>
+
+<pre>
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->Alice: Great!
+    John->Bob: How about you?
+    Bob-->John: Jolly good!
+```
+</pre>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+</code></pre>
+
+<h2 id="gantt-example">GANTT Example</h2>
+
+<pre><code>{{&lt;mermaid&gt;}}
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+{{&lt; /mermaid &gt;}}
+</code></pre>
+
+<p>renders as</p>
+
+<div class="mermaid" align="center">
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+</div>
+
+
+<p>or you can use this alternative syntax:</p>
+
+<pre>
+```mermaid
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+```
+</pre>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+</code></pre>
+
+<h3 id="class-example">Class example</h3>
+
+<pre>
+```mermaid
+classDiagram
+  Class01 <|-- AveryLongClass : Cool
+  Class03 *-- Class04
+  Class05 o-- Class06
+  Class07 .. Class08
+  Class09 --> C2 : Where am i?
+  Class09 --* C3
+  Class09 --|> Class07
+  Class07 : equals()
+  Class07 : Object[] elementData
+  Class01 : size()
+  Class01 : int chimp
+  Class01 : int gorilla
+  Class08 <--> C2: Cool label
+```
+</pre>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">classDiagram
+  Class01 &lt;|-- AveryLongClass : Cool
+  Class03 *-- Class04
+  Class05 o-- Class06
+  Class07 .. Class08
+  Class09 --&gt; C2 : Where am i?
+  Class09 --* C3
+  Class09 --|&gt; Class07
+  Class07 : equals()
+  Class07 : Object[] elementData
+  Class01 : size()
+  Class01 : int chimp
+  Class01 : int gorilla
+  Class08 &lt;--&gt; C2: Cool label
+</code></pre>
+
+<h3 id="git-example">Git example</h3>
+
+<pre>
+```mermaid
+gitGraph:
+options
+{
+  "nodeSpacing": 150,
+  "nodeRadius": 10
+}
+end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
+```
+</pre>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">gitGraph:
+options
+{
+  &quot;nodeSpacing&quot;: 150,
+  &quot;nodeRadius&quot;: 10
+}
+end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
+</code></pre>
 
 
 <footer class=" footline" >
@@ -552,7 +832,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -569,8 +848,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -585,21 +862,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -648,6 +912,26 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -723,10 +1007,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/knopets/" title="Knopets"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/shortcodes/expand/" title="Expand"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/basics/shortcodes/" title="&#39;LEARN&#39; Theme Short Codes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/basics/shortcodes/notice/" title="Notice" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

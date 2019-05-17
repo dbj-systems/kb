@@ -1,66 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DBJ.Systems Methodology on DBJ.Systems Knowledge Base</title>
-    <link>/</link>
-    <description>Recent content in DBJ.Systems Methodology on DBJ.Systems Knowledge Base</description>
+    <title>&#39;LEARN&#39; Theme Short Codes on DBJ.Systems Knowledge Base</title>
+    <link>/basics/shortcodes/</link>
+    <description>Recent content in &#39;LEARN&#39; Theme Short Codes on DBJ.Systems Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2019 16:12:52 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 16:12:03 +0200</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/basics/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Amazon Lessons to Learn</title>
-      <link>/basics/amazon_lessons_to_learn/</link>
-      <pubDate>Wed, 15 May 2019 16:12:52 +0200</pubDate>
-      
-      <guid>/basics/amazon_lessons_to_learn/</guid>
-      <description>DBJ Comment &amp;ndash; This describes managing the high pressure environment. On lower levels this probably works. But , there are serious issues with the wider picture of this. Primarily value of Architecture is neglected. Architects are called &amp;ldquo;Bar Raisers&amp;rdquo; etc. Mountain of Technical Debt is raising at Amazon. ROI and &amp;ldquo;Time to Market&amp;rdquo; are two key drivers at AMZN 2019. The likely outcome will be AMZN dropping into the hot mess of legacy systems and technical debt.</description>
-    </item>
-    
-    <item>
-      <title>Knopets</title>
-      <link>/basics/knopets/</link>
-      <pubDate>Wed, 15 May 2019 16:12:52 +0200</pubDate>
-      
-      <guid>/basics/knopets/</guid>
-      <description>ME DATA can/should be advertised as anti-trulioo platform
- trulioo.com  How imminent is this?
- FIDO2 Project https://en.wikipedia.org/wiki/FIDO2_Project Web Authentication https://www.w3.org/TR/webauthn/ Windows 10 will have &amp;ldquo;no passwords&amp;rdquo; option &amp;ldquo;very soon&amp;rdquo;  Windows 10 says Hello to no passwords with FIDO2 certification  Microsoft has passed another milestone on its quest to kill off passwords. The company has now gained official FIDO2 certification for Windows Hello, the Windows 10 biometric authentication system.</description>
-    </item>
-    
-    <item>
-      <title>Learning Things</title>
-      <link>/basics/learning/</link>
-      <pubDate>Wed, 15 May 2019 16:12:40 +0200</pubDate>
-      
-      <guid>/basics/learning/</guid>
-      <description> Mermaid diagrams were created by Knut Sveidqvist for easier documentation.
- On Line tool Paste HTML to MarkDown
- Generate a site using Hugo, a Fast and Flexible Website Generator, running in Visual Studio Team Services or Team Foundation Server.
- Learn the Hugo Learn
- Hugo blog from scratch
- YUML
-  </description>
-    </item>
-    
-    <item>
-      <title>&#39;If&#39;</title>
-      <link>/x-files/rudyard_kipling/</link>
-      <pubDate>Sat, 12 Jan 2019 22:14:57 -0600</pubDate>
-      
-      <guid>/x-files/rudyard_kipling/</guid>
-      <description>If you can keep your head when all about you
-Are losing theirs and blaming it on you,
-If you can trust yourself when all men doubt you,
-But make allowance for their doubting too;
-If you can wait and not be tired by waiting,
-Or being lied about, don’t deal in lies,
-Or being hated, don’t give way to hating,
-And yet don’t look too good, nor talk too wise:</description>
-    </item>
     
     <item>
       <title>Button</title>
