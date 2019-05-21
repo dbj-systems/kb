@@ -1,14 +1,12 @@
 ---
-title: "DBJ.Systems Methodology"
+title: "DBJ.Systems"
 draft: false
 description: The Home Page
 ---
 
-# DBJ.Systems Methodology
+## Methodology & Technology
 
-Based on TOGAF and CVP.
-
-{{% children style="h2" depth="1" description="true" %}}
+{{% children style="h4" depth="1" description="true" %}}
 
 
 

@@ -1,7 +1,10 @@
 ---
-title: "Basics"
+title: "The Basics"
 date: 2019-05-15T16:12:03+02:00
+chapter: true
 draft: false
-description: The Basics
+weight: 1
+pre: "<b>1.</b>"
+description: The Basics of HUGO and theme "Learn"
 ---
-{{% children style="h2" depth="1" description="true" %}}
+{{% children style="h4" depth="3" showhidden="true" %}}

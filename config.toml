@@ -16,6 +16,24 @@ description="DBJ.Systems Knowledge Base"
 # https://learn.netlify.com/en/basics/style-customization/
 # Change default color scheme with a variant one. Can be "red", "blue", "green".
 themeVariant = "dbjsystems"
-disableBreadcrumb = true
+disableBreadcrumb = false
 showVisitedLinks = true
-disableNextPrev = false
+disableNextPrev = true
+ # When using mulitlingual website, disable the switch language button.
+ disableLanguageSwitchingButton = true
+
+[[menu.shortcuts]]
+name = "MORE"
+identifier = "menu_more"
+
+[[menu.shortcuts]] 
+name = "Enlight IT"
+identifier = "enlit"
+url = "https://enlightit.rs"
+weight = 100
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+identifier = "tags"
+url = "/tags"
+weight = 130

@@ -3,13 +3,7 @@ title: Button
 description : "Nice buttons on your page."
 ---
 
-A button is a just a clickable button with optional icon.
-
-```
-{{%/* button href="https://getgrav.org/" */%}}Get Grav{{%/* /button */%}}
-{{%/* button href="https://getgrav.org/" icon="fas fa-download" */%}}Get Grav with icon{{%/* /button */%}}
-{{%/* button href="https://getgrav.org/" icon="fas fa-download" icon-position="right" */%}}Get Grav with icon right{{%/* /button */%}}
-```
+A button is a just a [clickable button](https://learn.netlify.com/en/shortcodes/button/) with optional icon.
 
 {{% button href="https://getgrav.org/" %}}Get Grav{{% /button %}}
 {{% button href="https://getgrav.org/" icon="fas fa-download" %}}Get Grav with icon{{% /button %}}
