@@ -1,10 +1,9 @@
-# baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
-title = "DBJ.Systems Knowledge Base"
+title = "DBJ.Systems Experimental Knowledge Base"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "learn"
- 
+theme = "learn" 
 
 # For search functionality
 [outputs]

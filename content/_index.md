@@ -1,12 +1,13 @@
 ---
 title: "DBJ.Systems"
-draft: false
 description: The Home Page
 ---
 
-## Methodology & Technology
+## 'HUGO' static CMS
 
-{{% children style="h4" depth="1" description="true" %}}
+> Site content 
+
+{{% children depth="999" description="true" %}}
 
 
 

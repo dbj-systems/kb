@@ -5,15 +5,55 @@ draft: false
 tags: ["knowledge", "diagrams"]
 description: Diagraming examples
 ---
+## Plant UML
 
+http://plantuml.com/index
+
+- Very mature
+- Well defined consistent syntax
+
+```
+@startuml
+
+title Classes - Generics Diagram
+
+package "Classic Collections" #DDDDDD {
+
+class Vector< typename T > {
+  int size()
+  T & data (int idx)
+}
+
+class List< typename T > 
+{
+  - Vector<T> data_
+  int size()
+  T & data (int idx)
+}
+
+  Vector <-- List
+}
+
+@enduml
+```
+ **Rendering of the above** 
+ 
+![PNG of the above](https://www.plantuml.com/plantuml/img/ZP2z2eDG38NtFCN1Gh63Ro0YA7JfA5rBk0O9lLx5cq9_wBjNfIwTcYtdo_c6bD5uibllYKpD2ohFCKf4XgC4cTH5rChTn3tHoExAdI1PZzIX6hmNPpg4c61NhuCNaLiupZCQfXps62LmBsXGp1JGO8ZwbFGmBmtsQDaOwH9hUp_GUpESDDfFdnP1jhcROkrU_fFYMqEUPQjx2QcKqCuF-000)
+
+### Plant Text
+
+**Very interesting "PlantUML" online ide: https://www.planttext.com**
+# ---------------------------------
+# Mermaid diagrams
 ## Flowchart
+#### Supported by HUGO Learn Theme
 
 ```mermaid
 graph TD;
-    A[It all starts here]-->Bullogator;
+    A[It all starts here]-->Bullgotor;
     A-->Collector;
 	A-.->|Send Patrol to|Monitor;
-    Bullogator-->Resultor;
+    Bullgotor-->Resultor;
     Collector-->Resultor;
 ```
 
@@ -34,12 +74,12 @@ sequenceDiagram
 	Client_->>Logic: Let me see the Ticks
 ```
 
-## FAP
+## Ganntogram
 
 ```mermaid
 gantt
 dateFormat  YYYY-MM-DD
-title CVP "Green Phase"
+title The "Green Phase"
 
 section Preparation
 Business, Methodology, Governance	: crit, active, des1, 2019-05-01,2019-06-01

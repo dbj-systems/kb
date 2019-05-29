@@ -1,6 +1,14 @@
-@echo build folder is: d:/devl/public
+@set target_folder=d:/devl/prod_site
+@echo.
+@echo.
+@echo Building into the folder : %target_folder%
+@echo.
 @echo Cleaning 
+@echo.
 @echo Building 
-@hugo --cleanDestinationDir --destination "d:/devl/public" --environment PRODUCTION --gc
+@echo.
+@hugo --cleanDestinationDir --destination %target_folder% --environment PROD --gc
+@echo.
+@echo.
 @echo.
 @pause

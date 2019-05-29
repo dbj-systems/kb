@@ -5,7 +5,7 @@ draft: false
 tags: ["knowledge", "snippets"]
 description: Knowledge + Snipets = Knopets
 ---
-- ME DATA can/should be advertised as anti-trulioo platform
+- DBJ.Systems can/should be advertised as anti-trulioo platform
   - [trulioo.com](https://www.trulioo.com/)
 
 - How imminent is this?
