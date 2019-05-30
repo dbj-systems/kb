@@ -1,10 +1,13 @@
 ---
-title: "Knopets"
+title: "Knowledge Snippets"
 date: 2019-05-15T16:12:52+02:00
 draft: false
 tags: ["knowledge", "snippets"]
 description: Knowledge + Snipets = Knopets
 ---
+
+- Should we use this: https://auth0.com/
+  - In general how much we can use open source?
 - DBJ.Systems can/should be advertised as anti-trulioo platform
   - [trulioo.com](https://www.trulioo.com/)
 

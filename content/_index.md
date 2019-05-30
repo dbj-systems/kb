@@ -3,11 +3,13 @@ title: "DBJ.Systems"
 description: The Home Page
 ---
 
-## Option for FAP delivery packaging
+## Option for the FAP packaging
 
-> Site content 
+{{%panel%}}This site works with a "page tree structure" to organize content : All contents are pages, which belong to other pages. 'chapter' page is a folder. it must contain <code>_index.md</code>{{%/panel%}}
 
-{{% children depth="999" description="true" %}}
+**Site content**  
+
+{{% children description="true" %}}
 
 
 

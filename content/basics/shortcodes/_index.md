@@ -5,4 +5,4 @@ chapter: true
 description: "'LEARN' Theme Short Codes"
 ---
 
-{{% children depth="999" %}}
+{{% children depth="999" showhidden="true"  %}}
