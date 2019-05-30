@@ -3,7 +3,7 @@ title: "DBJ.Systems"
 description: The Home Page
 ---
 
-## 'HUGO' static CMS
+## Option for FAP delivery packaging
 
 > Site content 
 

@@ -19,6 +19,6 @@ If one wants/needs humongous UML diagrams one would be much better off with VISI
 
 In any case drawing large and complex diagrams by typing them becomes much slower than actually drawing them. Keep that in mind.
 
-But if you still think you can do this, by no means use PlantUML. Most likely using VS Code plugn.
+But if you still think you can do this, by no means use PlantUML. Most likely using [VS Code plugn](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml&ssr=false#overview).
 
 I will have to deliver architecture documentation on the next project, not code. I think, I am going to package that as HUGO produced static site that also uses Mermaid diagrams.

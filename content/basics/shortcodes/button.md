@@ -1,6 +1,7 @@
 ---
 title: Button
 description : "Nice buttons on your page."
+hidden: true
 ---
 
 A button is a just a [clickable button](https://learn.netlify.com/en/shortcodes/button/) with optional icon.

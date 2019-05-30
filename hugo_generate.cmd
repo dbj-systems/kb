@@ -7,7 +7,7 @@
 @echo.
 @echo Building 
 @echo.
-@hugo --cleanDestinationDir --destination %target_folder% --environment PROD --gc
+@hugo --cleanDestinationDir --destination %target_folder% --environment PROD --gc --minify
 @echo.
 @echo.
 @echo.

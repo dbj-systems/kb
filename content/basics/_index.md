@@ -7,4 +7,5 @@ weight: 1
 pre: "<b>1.</b>"
 description: The Basics of HUGO and theme "Learn"
 ---
-{{% children style="h4" depth="3" showhidden="true" %}}
+
+{{% children depth="999" showhidden="true"  %}}
