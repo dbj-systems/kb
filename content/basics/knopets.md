@@ -6,9 +6,19 @@ tags: ["knowledge", "snippets"]
 description: Knowledge + Snipets = Knopets
 ---
 
+- There are a lot of "cathers in the rye" in the "digital woods". You want to avoid them in a wide circle.
+  - Basically people who are very weak in understanding the technology but are very good with words :) 
+  - This is **not** what are we doing: 
+     - (for example) "HOLO" (marketing blurb) "Post-blockchain technology, value-stable cryptocurrency, and peer-to-peer hosting of scalable, distributed apps. Now is the time for popular access to an equitable, decentralized web! https://holo.host"
+     - And hopefully we **do not deal** with this kind of "digital nomads" 
+     - (for example) "Jean M Russell
+Holo hApps Product Owner. Co-Director Commons Engine. Cultivating Flows http://www.triarchypress.net/cultivating-flows.html Thrivability http://t.co/Q6rNM51ZU4"
+    - just looking into domain and document names one can not help but giggle. 
+	   - (for example) "Thrivability" (laugh)
+
 - Should we use this: https://auth0.com/
   - In general how much we can use open source?
-- DBJ.Systems can/should be advertised as anti-trulioo platform
+- DBJ.Systems can/should be advertised as **anti**-trulioo platform
   - [trulioo.com](https://www.trulioo.com/)
 
 - How imminent is this?
