@@ -7,14 +7,17 @@ description: The Home Page
 #### Knippets = Knowledge + Snippets
 
 
-This site is built using [HUGO](https://gohugo.io/) static site generator and handler. This particular site uses HUGO Theme [docDock](https://themes.gohugo.io/docdock/), and as a such, works organized arround a "page tree structure" to organize content. 
+**This site is built using [HUGO](https://gohugo.io/) static site generator and handler.** 
 
-{{%panel%}} 
+{{% notice note %}} 
+This particular site uses HUGO Theme <a href="https://themes.gohugo.io/docdock/">docDock</a>, and as a such, works organized arround a "page tree structure" to organize content.
+{{% /notice %}}
+{{% notice note %}} 
 All contents are pages, which belong to other pages. When creating a site localy, 'chapter' page is a simple folder. It must contain <code>_index.md</code> markdown document.
-{{%/panel%}}
-{{%panel%}} 
+{{% /notice %}}
+{{% notice note %}} 
 To start using this site please use the toolbar on the left.
-{{%/panel%}}
+{{% /notice %}}
 
 
 
