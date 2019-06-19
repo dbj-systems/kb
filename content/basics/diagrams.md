@@ -51,44 +51,18 @@ class List< typename T >
 
 ## Flowchart
 
-```
-		```mermaid
-			graph TD;
-			A[It all starts here]-->Bullgotor;
-			A-->Collector;
-			A-.->|Send Patrol to|Monitor;
-			Bullgotor-->Resultor;
-			Collector-->Resultor;
-		```
-```
-
-```mermaid
+{{<mermaid align="left">}}
 graph TD;
     A[It all starts here]-->Bullgotor;
     A-->Collector;
 	A-.->|Send Patrol to|Monitor;
     Bullgotor-->Resultor;
     Collector-->Resultor;
-```
+{{< /mermaid >}}
 
 ## Sequence diagram
 
-		```mermaid
-		sequenceDiagram
-			participant Client
-			participant Logic
-			Logic->>Storage: Hello, how are you?
-			loop Web Sockets
-				Storage->>Storage: Pull Stock Ticks
-			end
-			Note right of Storage: Rational thoughts <br/>prevail...
-			Storage->>Logic: Refresh your Ticks cache?
-			Logic-->>Storage: Give me the latest!
-			Logic->>Client: Fresh Ticks arrived!
-			Client_->>Logic: Let me see the Ticks
-		```
-
-```mermaid
+{{<mermaid align="left">}}
 sequenceDiagram
     participant Client
     participant Logic
@@ -101,27 +75,11 @@ sequenceDiagram
     Logic-->>Storage: Give me the latest!
     Logic->>Client: Fresh Ticks arrived!
 	Client_->>Logic: Let me see the Ticks
-```
+{{< /mermaid >}}
 
 ## Ganttogram
 
-		```mermaid
-		gantt
-		dateFormat  YYYY-MM-DD
-		title The "Green Phase"
-
-		section Preparation
-		Business, Methodology, Governance	: crit, active, des1, 2019-05-01,2019-06-01
-		section Architecture
-		Conceptual	: des2, 2019-06-01, 2019-08-01
-		Logical 	: des3, 2019-07-01, 2019-09-30
-		Physical 	: des4, 2019-08-01, 2019-09-30
-		section Technology
-		Evaluations	: des5, 2019-06-01, 2019-09-30
-		section Yellow Gate
-		Final Investement Decision:crit, 5d
-		```
-```mermaid
+{{<mermaid align="left">}}
 gantt
 dateFormat  YYYY-MM-DD
 title The "Green Phase"
@@ -136,5 +94,4 @@ section Technology
 Evaluations	: des5, 2019-06-01, 2019-09-30
 section Yellow Gate
 Final Investement Decision:crit, 5d
-
-```
+{{< /mermaid >}}
