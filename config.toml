@@ -1,68 +1,73 @@
 baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
 
-languageCode = "en-us"
-DefaultContentLanguage = "en"
-title = "DBJ.Systems Experimental Knowledge Base"
-theme = "docdock"
-# themesdir = "../.."
-pygmentsCodeFences = true
-pygmentsStyle = "monokailight"
-
-
-
-# [Languages]
-# [Languages.en]
-# title = "Documentation for Hugo docDock"
-# weight = 1
-# languageName = "English"
-# 
-# [Languages.fr]
-# title = "Documentation du thème docDock"
-# weight = 2
-# languageName = "Français"
-
-
-
+title = "DBJ.System Knippets"
+theme = "learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
 
 [params]
-author="DBJ"
-description="DBJ.Systems Knowledge Base"
-editURL = "https://x.dbj.org"
-showVisitedLinks = true # default is false
-themeStyle = "original" # "original" or "flex" # default "flex"
-themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
-ordersectionsby = "weight" # ordersectionsby = "title"
-disableHomeIcon = true # default is false
-disableSearch = false # default is false
-disableNavChevron = false # set true to hide next/prev chevron, default is false
-highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
-menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
-enableGitInfo = true
+  description = "DBJ.System Knippets"
+  author = "DBJ.Systems"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
+[Languages]
+[Languages.en]
+title = "DBJ.System Knippets"
+weight = 1
+languageName = "English"
 
-[[menu.shortcuts]]
-pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> <label>Github repo</label>"
-identifier = "kb_repo"
-url = "https://github.com/dbj-systems/kb"
-weight = 100
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/matcornic/hugo-theme-learn"
+weight = 10
 
-[[menu.shortcuts]] 
-name = "<i class='fa fa-lightbulb-o'></i> <label>Enlight IT</label>"
-identifier = "enlit"
-url = "https://enlightit.rs"
-weight = 100
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> Showcases"
+url = "showcase"
+weight = 11
 
-# [[menu.shortcuts]]
-# name = "<i class='fa fa-cloud-download'></i> <label>Download</label>"
-# url = "https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip"
-# weight = 110
-
-[[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> <label>Hugo Documentation</label>"
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
 identifier = "hugodoc"
 url = "https://gohugo.io/"
-weight = 120
+weight = 20
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
+url = "/credits"
+weight = 30
+
+[Languages.fr]
+title = "Documentation du thème Hugo Learn"
+weight = 2
+languageName = "Français"
+
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> Repo Github"
+identifier = "ds"
+url = "https://github.com/matcornic/hugo-theme-learn"
+weight = 10
+
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> Vitrine"
+url = "/showcase"
+weight = 11
+
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Documentation Hugo"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Crédits"
+url = "/credits"
+weight = 30
