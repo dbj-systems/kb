@@ -8,8 +8,9 @@ description: The Home Page
 
 {{%panel%}} 
 
-NOTE: This site is built using [HUGO](https://gohugo.io/) static site generator and handler. This particular site works with a "page tree structure" to organize content. 
+NOTE: This site is built using [HUGO](https://gohugo.io/) static site generator and handler. This particular site uses HUGO Theme [docDock](https://themes.gohugo.io/docdock/), and as a such, works organized arround a "page tree structure" to organize content. 
 {{%/panel%}}
+
 {{%panel%}} 
 All contents are pages, which belong to other pages. When creating a site localy, 'chapter' page is a simple folder. It must contain <code>_index.md</code> markdown document.
 {{%/panel%}}
