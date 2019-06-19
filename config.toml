@@ -13,6 +13,8 @@ defaultContentLanguageInSubdir= true
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
+  # Change default color scheme with a variant one. Can be "red", "blue", "green". or user defined
+  themeVariant = "dbjsystems"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]

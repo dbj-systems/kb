@@ -3,7 +3,7 @@ title: "DBJ.Systems"
 description: The Home Page
 ---
 
-## DBJ.Systems Knippets&trade;
+## Knippets&trade;
 #### Knippets = Knowledge + Snippets
 
 
@@ -18,6 +18,8 @@ All contents are pages, which belong to other pages. When creating a site localy
 {{% notice note %}} 
 To start using this site please use the toolbar on the left.
 {{% /notice %}}
+<hr/>
+Content &copy; 2019 by [DBJ.Systems](https://dbj.systems)
 
 
 
