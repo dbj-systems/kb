@@ -14,9 +14,7 @@ description: Example of a C++ ever-adding complexity
 #include <iostream>
 #include <variant>
 #include <vector>
-
 // vararg inheritance and overloading of thus inherited
-
 // 'Functor' is a type that has public function call operator
 // arguments are vararg of Functor types
 template<typename ... Functors>
