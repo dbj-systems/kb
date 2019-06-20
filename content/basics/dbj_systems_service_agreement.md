@@ -1,6 +1,6 @@
 ---
 title: "DBJ.Systems Service Agreement"
-draft: false
+draft: true
 tags: ["service", "agreement"]
 description: DBJ.Systems Service Agreement
 ---
