@@ -8,9 +8,9 @@ description: Example of a C++ ever-adding complexity
 - Can this be done simpler in C, wihtout losing the functionality?
 - Can this be done using std::XYZ ?
 
-```
+```cpp
 // https://wandbox.org/permlink/udzltQne483qGrat
-// compiled by dbj@dbj.org from popular C++17 youtube examples
+// dbj@dbj.org from popular C++17 youtube examples
 #include <iostream>
 #include <variant>
 #include <vector>
@@ -42,17 +42,15 @@ Funny enough we have this elaborate hierachy generator, but we do not like polym
 
 Instead we could have opted for this C++17 mechanisms bellow, to achieve (with no hacks) polymorphism with no inheritance. By using `std::variant`. And not using the `Ovld`.
 
-```
-
+```cpp        
 // https://youtu.be/e2ZQyYr0Oi0
-
 // shapes with no common ancestor
 struct Circle {
- void draw () { std::cout << "\n drawing Circle" ; }
+void draw () { std::cout << "\n drawing Circle" ; }
 };
 
 struct Line {
- void draw () {  std::cout << "\n drawing Line"   ; }
+void draw () {  std::cout << "\n drawing Line"   ; }
 };
 
 // basically std::variant is allowing us to 
@@ -67,17 +65,17 @@ inline void drawer ( std::vector<GeoObj> shapes )
     {
 #if ! defined(USE_OVERLORD)   
 // this stays unchanged if we add 'Triangle' 
-       std::visit( [] ( auto && obj ) { obj.draw(); }, geoobj ) ;
+    std::visit( [] ( auto && obj ) { obj.draw(); }, geoobj ) ;
 #else       
-       std::visit(
-           // not created before here
-       Ovld{
+    std::visit(
+        // not created before here
+    Ovld{
 // give two functors as two lambdas to the ctor of Ovld
 // caller needs to explicitly code for each shape here
-       [] (Circle & c){ c.draw(); },
-       [] (Line   & l){ l.draw(); }
-       }, 
-       geoobj );
+    [] (Circle & c){ c.draw(); },
+    [] (Line   & l){ l.draw(); }
+    }, 
+    geoobj );
 #endif
     }
 }
@@ -88,7 +86,7 @@ int main()
     drawer( shapes );
     std::cout << "\n\nDONE!" << std::endl;
 }
-```
+```        
 `Ovld` is C++17, that also seems very complex to majority of C++ programmers. And certianly to **all** non C++ programmers.
 
 But, it only generates a simple hierarchical structure ot Types given as `Ovld` template parameters. Each of them programers would probably understand this diagram immediately.
