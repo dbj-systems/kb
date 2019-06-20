@@ -1,12 +1,12 @@
 ---
-title: "Is this programing progress"
+title: "Is this progress?"
 draft: false
-description: Example of a C++17 complex code
+description: Example of a C++ ever-adding complexity
 ---
 
 - What are the qualities of the design bellow?
-- Can this be done simpler in C, wihtout losing the design qualities?
-- Can this be done using 
+- Can this be done simpler in C, wihtout losing the functionality?
+- Can this be done using std::XYZ ?
 
 ```cpp
 // https://wandbox.org/permlink/udzltQne483qGrat
@@ -35,15 +35,18 @@ Ovld<Functors...> ; /* this as being it's type */
 
 // we do not have to use the above mechanism
 // but we are not sure design principles 
-// behind are not superior
+// behind are not superior?
 #define USE_OVERLORD
 ```
-Funny enough we do not like polymorphism. So we have this C++17 mechanisms bellow, to achieve (with no hacks) polymorphism with no inheritance. By using `std::variant`.
+Funny enough we have this elaborate hierachy generator, but we do not like polymorphism. 
+
+Instead we could have opted for this C++17 mechanisms bellow, to achieve (with no hacks) polymorphism with no inheritance. By using `std::variant`. And not using the `Ovld`.
 
 ```cpp
 
 // https://youtu.be/e2ZQyYr0Oi0
 
+// shapes with no common ancestor
 struct Circle {
  void draw () { std::cout << "\n drawing Circle" ; }
 };
@@ -52,20 +55,29 @@ struct Line {
  void draw () {  std::cout << "\n drawing Line"   ; }
 };
 
+// basically std::variant is allowing us to 
+// have one type for the std::vector
+// used latter
 using GeoObj = std::variant<Circle, Line> ;
 
+// visit each GeoObj and call `draw()` on it
 inline void drawer ( std::vector<GeoObj> shapes )
 {
     for ( auto && geoobj : shapes )
     {
-#if ! defined(USE_OVERLORD)    
+#if ! defined(USE_OVERLORD)   
+// this stays unchanged if we add 'Triangle' 
        std::visit( [] ( auto && obj ) { obj.draw(); }, geoobj ) ;
 #else       
-       std::visit(Ovld{
-       // give two functors as two lambdas to the ctor of Ovld
+       std::visit(
+           // not created before here
+       Ovld{
+// give two functors as two lambdas to the ctor of Ovld
+// caller needs to explicitly code for each shape here
        [] (Circle & c){ c.draw(); },
        [] (Line   & l){ l.draw(); }
-       }, geoobj );
+       }, 
+       geoobj );
 #endif
     }
 }
@@ -77,12 +89,25 @@ int main()
     std::cout << "\n\nDONE!" << std::endl;
 }
 ```
-`Ovld` is C++17 that seems very complex to majority of C++ programmers. And to **all** non C++ programmers.
+`Ovld` is C++17, that also seems very complex to majority of C++ programmers. And certianly to **all** non C++ programmers.
 
-But, it generates a hierarchical structure ot Types, and their instances, each of them programers would probably understand immediately.
+But, it only generates a simple hierarchical structure ot Types given as `Ovld` template parameters. Each of them programers would probably understand this diagram immediately.
 
-![plantuml](https://www.plantuml.com/plantuml/img/RO_D2e9058NtzodEigW9Lor4Gj1b4FG65sV82wF6pAIBwjspoIIavVtE3_VaFh0BjyOI-OgjmJv9C8WEDL6GC8ApiHoaQtqjLm-5mhBtA8KlZXiYgk9zwgtEK8YhhDdYAAq13hWJiEaxqPEIfjhni5hF-6sSuVDRzZ7_f9U6sFzFfYcQFPHIyIcas85YO0afDwqUfxy0)
+![plantuml](https://www.plantuml.com/plantuml/img/RO-z2W8n3CVtF4L6HGvkS2eE1peAFaDeAYtK7hJnYgZlRi_s5CGnl_z7aY49HRbUF80uyGPFasUqpaJIzePipYuOnkp4ujv5NHmK68-50YHDPTxsVT5PB01eJodLZZiWRgRHSSifnP7oQlt1SuTIXmgVIxOj-QPvCLHzJlrJuRrqz-XupA5hDJ-mNZsOmENX5m00)
 
-So, we have this C++17 features, working together that generate the simple type hierachy and overloads, but written in a very condensed code, hard to understand.
+Ovld working with `std::variant` dispatches the `draw` message based on the type. 
 
-What are the prevailing benefits of the concepts on top of which `Ovld` is coded.
+Instance of the `Ovld` is the visitor to the variant.
+
+So, we have this advanced C++17 features, working together that generate this one simple type hierachy, and overloads functioning inside. Written in a very condensed code, that is hard to understand.
+
+What are the prevailing benefits of the concepts on top of which `Ovld` is coded?
+
+The key benefit is polymorphism with no inheritance.
+
+- Is this resilient to change?
+    - We avoid inheritance, true, but consider the changes necessary if you add `Triangle`.
+- Is this functional but simple?
+- Is this feasible to maintain?
+
+As in the quantum phenomena: It depends on the oobserver.
