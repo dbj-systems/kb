@@ -8,7 +8,7 @@ description: Example of a C++ ever-adding complexity
 - Can this be done simpler in C, wihtout losing the functionality?
 - Can this be done using std::XYZ ?
 
-```cpp
+```
 // https://wandbox.org/permlink/udzltQne483qGrat
 // compiled by dbj@dbj.org from popular C++17 youtube examples
 #include <iostream>
@@ -42,7 +42,7 @@ Funny enough we have this elaborate hierachy generator, but we do not like polym
 
 Instead we could have opted for this C++17 mechanisms bellow, to achieve (with no hacks) polymorphism with no inheritance. By using `std::variant`. And not using the `Ovld`.
 
-```cpp
+```
 
 // https://youtu.be/e2ZQyYr0Oi0
 
